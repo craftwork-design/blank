@@ -16,6 +16,7 @@
     "layout"
   ],
   "meta": {
+    "demo": "resizable-thumb",
     "tier": "free"
   }
 }

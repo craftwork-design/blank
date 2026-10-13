@@ -2,7 +2,7 @@
   "name": "macbook-frame",
   "type": "registry:ui",
   "title": "MacBook Frame",
-  "description": "An open laptop drawn in CSS — lid, hinge and base — around a 16:10 screen for screenshots or live UI.",
+  "description": "An open laptop drawn in CSS (lid, hinge and base) around a 16:10 screen for screenshots or live UI.",
   "files": [
     {
       "path": "packages/ui/src/macbook-frame.tsx",

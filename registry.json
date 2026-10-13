@@ -679,6 +679,7 @@
         "data-display"
       ],
       "meta": {
+        "demo": "aspect-ratio-thumb",
         "tier": "free"
       }
     },
@@ -701,6 +702,7 @@
         "data-display"
       ],
       "meta": {
+        "demo": "avatar-thumb",
         "tier": "free"
       }
     },
@@ -724,6 +726,7 @@
         "data-display"
       ],
       "meta": {
+        "demo": "badge-variants",
         "tier": "free"
       }
     },
@@ -2050,6 +2053,7 @@
         "data-display"
       ],
       "meta": {
+        "demo": "kbd-button",
         "tier": "free"
       }
     },
@@ -2078,7 +2082,7 @@
       "name": "macbook-frame",
       "type": "registry:ui",
       "title": "MacBook Frame",
-      "description": "An open laptop drawn in CSS — lid, hinge and base — around a 16:10 screen for screenshots or live UI.",
+      "description": "An open laptop drawn in CSS (lid, hinge and base) around a 16:10 screen for screenshots or live UI.",
       "files": [
         {
           "path": "packages/ui/src/macbook-frame.tsx",
@@ -2273,6 +2277,7 @@
         "animations"
       ],
       "meta": {
+        "demo": "number-ticker-thumb",
         "tier": "free",
         "badge": "new"
       }
@@ -2394,6 +2399,7 @@
         "marketing"
       ],
       "meta": {
+        "demo": "pricing-card-thumb",
         "tier": "free",
         "badge": "new"
       }
@@ -2529,6 +2535,7 @@
         "layout"
       ],
       "meta": {
+        "demo": "resizable-thumb",
         "tier": "free"
       }
     },
@@ -2536,7 +2543,7 @@
       "name": "safari-frame",
       "type": "registry:ui",
       "title": "Safari Frame",
-      "description": "macOS Safari window chrome — traffic lights, address field with lock and host, optional tab strip — around a viewport for screenshots, video or live UI.",
+      "description": "macOS Safari window chrome (traffic lights, address field with lock and host, optional tab strip) around a viewport for screenshots, video or live UI.",
       "dependencies": [
         "lucide-react"
       ],
@@ -2814,6 +2821,7 @@
         "feedback"
       ],
       "meta": {
+        "demo": "skeleton-card",
         "tier": "free"
       }
     },
@@ -3213,6 +3221,7 @@
         "data-display"
       ],
       "meta": {
+        "demo": "timeline-horizontal",
         "tier": "free",
         "badge": "new",
         "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/timeline.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
@@ -3238,6 +3247,7 @@
         "forms"
       ],
       "meta": {
+        "demo": "toggle-variants",
         "tier": "free"
       }
     },

@@ -17,6 +17,7 @@
     "animations"
   ],
   "meta": {
+    "demo": "number-ticker-thumb",
     "tier": "free",
     "badge": "new"
   }

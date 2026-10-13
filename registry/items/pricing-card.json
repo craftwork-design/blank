@@ -13,6 +13,7 @@
   ],
   "categories": ["marketing"],
   "meta": {
+    "demo": "pricing-card-thumb",
     "tier": "free",
     "badge": "new"
   }

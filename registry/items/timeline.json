@@ -17,6 +17,7 @@
     "data-display"
   ],
   "meta": {
+    "demo": "timeline-horizontal",
     "tier": "free",
     "badge": "new",
     "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/timeline.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",

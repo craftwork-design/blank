@@ -17,6 +17,7 @@
     "forms"
   ],
   "meta": {
+    "demo": "toggle-variants",
     "tier": "free"
   }
 }

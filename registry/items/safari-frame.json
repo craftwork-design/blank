@@ -2,7 +2,7 @@
   "name": "safari-frame",
   "type": "registry:ui",
   "title": "Safari Frame",
-  "description": "macOS Safari window chrome — traffic lights, address field with lock and host, optional tab strip — around a viewport for screenshots, video or live UI.",
+  "description": "macOS Safari window chrome (traffic lights, address field with lock and host, optional tab strip) around a viewport for screenshots, video or live UI.",
   "dependencies": [
     "lucide-react"
   ],

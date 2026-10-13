@@ -16,6 +16,7 @@
     "data-display"
   ],
   "meta": {
+    "demo": "aspect-ratio-thumb",
     "tier": "free"
   }
 }
