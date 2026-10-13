@@ -1,0 +1,21 @@
+{
+  "name": "spinner",
+  "type": "registry:ui",
+  "title": "Spinner",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/spinner.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/spinner.tsx"
+    }
+  ],
+  "categories": [
+    "feedback"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

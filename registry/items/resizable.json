@@ -1,0 +1,21 @@
+{
+  "name": "resizable",
+  "type": "registry:ui",
+  "title": "Resizable",
+  "dependencies": [
+    "react-resizable-panels"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/resizable.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/resizable.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "iphone-frame",
+  "type": "registry:ui",
+  "title": "iPhone Frame",
+  "description": "A modern iPhone drawn in CSS: titanium rim, even bezels, Dynamic Island and side buttons, at true proportions at any width.",
+  "files": [
+    {
+      "path": "packages/ui/src/iphone-frame.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/iphone-frame.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cta-01",
+  "type": "registry:block",
+  "title": "CTA 01",
+  "description": "A centered call-to-action band with a two-tone headline, a primary and a secondary pill button, and a short reassurance line.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@blank/button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/blocks/cta-01.tsx",
+      "type": "registry:block",
+      "target": "components/blocks/cta-01.tsx"
+    }
+  ],
+  "categories": [
+    "cta",
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "height": 730
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "popover",
+  "type": "registry:ui",
+  "title": "Popover",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/popover.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/popover.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

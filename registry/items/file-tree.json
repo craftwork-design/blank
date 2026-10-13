@@ -1,0 +1,31 @@
+{
+  "name": "file-tree",
+  "type": "registry:ui",
+  "title": "File Tree",
+  "description": "An accessible file and folder tree with arrow-key navigation, type-ahead, selection and animated folders.",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/file-tree.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/file-tree.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/magicuidesign/magicui",
+      "path": "apps/www/registry/magicui/file-tree.tsx",
+      "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+      "license": "MIT",
+      "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/file-tree.tsx"
+    }
+  }
+}

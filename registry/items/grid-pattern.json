@@ -1,0 +1,20 @@
+{
+  "name": "grid-pattern",
+  "type": "registry:ui",
+  "title": "Grid Pattern",
+  "description": "A static SVG grid for section backgrounds, with optional highlighted cells.",
+  "files": [
+    {
+      "path": "packages/ui/src/grid-pattern.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/grid-pattern.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

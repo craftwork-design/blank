@@ -1,0 +1,29 @@
+{
+  "name": "snippet",
+  "type": "registry:ui",
+  "title": "Snippet",
+  "description": "An install command with package-manager tabs and a copy button.",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/snippet.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/snippet.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/shadcnblocks/kibo/blob/main/packages/snippet/index.tsx@3d63cdb15b79d972e3dc38a10997987672f9b263",
+    "license": "MIT"
+  }
+}

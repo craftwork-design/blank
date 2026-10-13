@@ -1,0 +1,22 @@
+{
+  "name": "menubar",
+  "type": "registry:ui",
+  "title": "Menubar",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/menubar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/menubar.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

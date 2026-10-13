@@ -1,0 +1,23 @@
+{
+  "name": "flickering-grid",
+  "type": "registry:ui",
+  "title": "Flickering Grid",
+  "description": "A canvas of small squares that flicker, colored from a CSS token.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/flickering-grid.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/flickering-grid.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

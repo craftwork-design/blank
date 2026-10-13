@@ -1,0 +1,20 @@
+{
+  "name": "banner",
+  "type": "registry:ui",
+  "title": "Banner",
+  "description": "A page-level announcement strip with actions and a dismiss button.",
+  "dependencies": ["class-variance-authority", "lucide-react"],
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "packages/ui/src/banner.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/banner.tsx"
+    }
+  ],
+  "categories": ["feedback"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

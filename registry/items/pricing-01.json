@@ -1,0 +1,30 @@
+{
+  "name": "pricing-01",
+  "type": "registry:block",
+  "title": "Pricing 01",
+  "description": "Three pricing tiers with a monthly/yearly toggle on a sliding indicator, prices that roll digit by digit, and a highlighted middle plan.",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "@blank/badge",
+    "@blank/button",
+    "@blank/toggle-group"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/blocks/pricing-01.tsx",
+      "type": "registry:block",
+      "target": "components/blocks/pricing-01.tsx"
+    }
+  ],
+  "categories": [
+    "pricing",
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "height": 1120
+  }
+}

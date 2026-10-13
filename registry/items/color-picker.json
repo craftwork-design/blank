@@ -1,0 +1,32 @@
+{
+  "name": "color-picker",
+  "type": "registry:ui",
+  "title": "Color Picker",
+  "description": "A popover with a saturation area, hue slider, hex/RGB/HSL input, presets and an eyedropper where the browser has one.",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "popover",
+    "select"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/color-picker.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/color-picker.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/color-picker.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

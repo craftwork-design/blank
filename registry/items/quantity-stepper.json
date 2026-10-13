@@ -1,0 +1,19 @@
+{
+  "name": "quantity-stepper",
+  "type": "registry:ui",
+  "title": "Quantity Stepper",
+  "description": "A number field with decrement and increment buttons, clamped to a range.",
+  "dependencies": ["class-variance-authority", "lucide-react"],
+  "files": [
+    {
+      "path": "packages/ui/src/quantity-stepper.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/quantity-stepper.tsx"
+    }
+  ],
+  "categories": ["forms"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

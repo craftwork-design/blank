@@ -1,0 +1,20 @@
+{
+  "name": "progressive-blur",
+  "type": "registry:ui",
+  "title": "Progressive Blur",
+  "description": "A blur that ramps up toward the edge of a scrolling container.",
+  "files": [
+    {
+      "path": "packages/ui/src/progressive-blur.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/progressive-blur.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "input-group",
+  "type": "registry:ui",
+  "title": "Input Group",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/input-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/input-group.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "table",
+  "type": "registry:ui",
+  "title": "Table",
+  "files": [
+    {
+      "path": "packages/ui/src/table.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/table.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

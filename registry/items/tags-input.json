@@ -1,0 +1,25 @@
+{
+  "name": "tags-input",
+  "type": "registry:ui",
+  "title": "Tags Input",
+  "description": "A text field that turns entries into removable tags: Enter or comma adds, Backspace removes, paste splits.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/tags-input.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/tags-input.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/tags-input.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

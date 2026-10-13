@@ -1,0 +1,23 @@
+{
+  "name": "sonner",
+  "type": "registry:ui",
+  "title": "Sonner",
+  "dependencies": [
+    "lucide-react",
+    "next-themes",
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/sonner.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sonner.tsx"
+    }
+  ],
+  "categories": [
+    "feedback"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

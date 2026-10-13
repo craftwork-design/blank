@@ -1,0 +1,23 @@
+{
+  "name": "blur-fade",
+  "type": "registry:ui",
+  "title": "Blur Fade",
+  "description": "Fades content in from a blur and a small offset, on mount or on scroll.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/blur-fade.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/blur-fade.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

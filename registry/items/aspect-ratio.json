@@ -1,0 +1,21 @@
+{
+  "name": "aspect-ratio",
+  "type": "registry:ui",
+  "title": "Aspect Ratio",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/aspect-ratio.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/aspect-ratio.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

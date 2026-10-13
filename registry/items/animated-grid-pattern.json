@@ -1,0 +1,23 @@
+{
+  "name": "animated-grid-pattern",
+  "type": "registry:ui",
+  "title": "Animated Grid Pattern",
+  "description": "A background grid whose cells fade in and out at random.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/animated-grid-pattern.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/animated-grid-pattern.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

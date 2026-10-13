@@ -1,0 +1,22 @@
+{
+  "name": "button",
+  "type": "registry:ui",
+  "title": "Button",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/button.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/button.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

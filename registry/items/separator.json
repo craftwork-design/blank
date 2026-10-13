@@ -1,0 +1,21 @@
+{
+  "name": "separator",
+  "type": "registry:ui",
+  "title": "Separator",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/separator.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/separator.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

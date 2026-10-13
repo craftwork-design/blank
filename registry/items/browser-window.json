@@ -1,0 +1,19 @@
+{
+  "name": "browser-window",
+  "type": "registry:ui",
+  "title": "Browser Window",
+  "description": "Browser chrome around a screenshot or a live page, for product visuals.",
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "packages/ui/src/browser-window.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/browser-window.tsx"
+    }
+  ],
+  "categories": ["mockups"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

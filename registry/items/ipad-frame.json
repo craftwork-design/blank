@@ -1,0 +1,20 @@
+{
+  "name": "ipad-frame",
+  "type": "registry:ui",
+  "title": "iPad Frame",
+  "description": "A tablet drawn in CSS with even bezels, in portrait or landscape through the orientation prop.",
+  "files": [
+    {
+      "path": "packages/ui/src/ipad-frame.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/ipad-frame.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

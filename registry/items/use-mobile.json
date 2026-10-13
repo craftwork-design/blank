@@ -1,0 +1,15 @@
+{
+  "name": "use-mobile",
+  "type": "registry:hook",
+  "title": "Use Mobile",
+  "files": [
+    {
+      "path": "packages/ui/hooks/use-mobile.ts",
+      "type": "registry:hook",
+      "target": "hooks/use-mobile.ts"
+    }
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

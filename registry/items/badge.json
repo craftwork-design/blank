@@ -1,0 +1,23 @@
+{
+  "name": "badge",
+  "type": "registry:ui",
+  "title": "Badge",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/badge.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/badge.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

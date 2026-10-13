@@ -1,0 +1,24 @@
+{
+  "name": "device-stack",
+  "type": "registry:ui",
+  "title": "Device Stack",
+  "description": "The hero composition: a MacBook with an iPhone standing in front of one corner, each taking its own screen content.",
+  "registryDependencies": [
+    "@blank/iphone-frame",
+    "@blank/macbook-frame"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/device-stack.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/device-stack.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

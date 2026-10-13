@@ -1,0 +1,22 @@
+{
+  "name": "toggle",
+  "type": "registry:ui",
+  "title": "Toggle",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/toggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/toggle.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "interactive-hover-button",
+  "type": "registry:ui",
+  "title": "Interactive Hover Button",
+  "description": "Blank's button with a dot that floods it on hover while the label slides back in with an arrow.",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@blank/button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/interactive-hover-button.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/interactive-hover-button.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/magicuidesign/magicui",
+      "path": "apps/www/registry/magicui/interactive-hover-button.tsx",
+      "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+      "license": "MIT",
+      "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/interactive-hover-button.tsx"
+    }
+  }
+}

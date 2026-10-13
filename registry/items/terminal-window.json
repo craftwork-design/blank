@@ -1,0 +1,24 @@
+{
+  "name": "terminal-window",
+  "type": "registry:ui",
+  "title": "Terminal Window",
+  "description": "Terminal chrome with a title bar, prompt-led command lines, coloured output lines and an optional typing animation.",
+  "dependencies": [
+    "class-variance-authority",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/terminal-window.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/terminal-window.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

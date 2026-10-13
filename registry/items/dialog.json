@@ -1,0 +1,25 @@
+{
+  "name": "dialog",
+  "type": "registry:ui",
+  "title": "Dialog",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/dialog.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/dialog.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

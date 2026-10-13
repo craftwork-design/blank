@@ -1,0 +1,23 @@
+{
+  "name": "scroll-progress",
+  "type": "registry:ui",
+  "title": "Scroll Progress",
+  "description": "A hairline that fills as the page or a container scrolls.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/scroll-progress.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/scroll-progress.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

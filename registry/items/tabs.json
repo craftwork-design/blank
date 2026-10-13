@@ -1,0 +1,22 @@
+{
+  "name": "tabs",
+  "type": "registry:ui",
+  "title": "Tabs",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/tabs.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/tabs.tsx"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

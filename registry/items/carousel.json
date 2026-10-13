@@ -1,0 +1,25 @@
+{
+  "name": "carousel",
+  "type": "registry:ui",
+  "title": "Carousel",
+  "dependencies": [
+    "embla-carousel-react",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/carousel.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/carousel.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "label",
+  "type": "registry:ui",
+  "title": "Label",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/label.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/label.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

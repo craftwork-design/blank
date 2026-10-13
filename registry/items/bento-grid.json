@@ -1,0 +1,33 @@
+{
+  "name": "bento-grid",
+  "type": "registry:ui",
+  "title": "Bento Grid",
+  "description": "A grid of feature tiles with icon, copy, a background slot and a call to action that rises on hover.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@blank/button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/bento-grid.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/bento-grid.tsx"
+    }
+  ],
+  "categories": [
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/magicuidesign/magicui",
+      "path": "apps/www/registry/magicui/bento-grid.tsx",
+      "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+      "license": "MIT",
+      "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/bento-grid.tsx"
+    }
+  }
+}

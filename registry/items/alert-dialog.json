@@ -1,0 +1,24 @@
+{
+  "name": "alert-dialog",
+  "type": "registry:ui",
+  "title": "Alert Dialog",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/alert-dialog.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/alert-dialog.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

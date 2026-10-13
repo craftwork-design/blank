@@ -1,0 +1,23 @@
+{
+  "name": "checkbox",
+  "type": "registry:ui",
+  "title": "Checkbox",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/checkbox.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/checkbox.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

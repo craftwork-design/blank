@@ -1,0 +1,21 @@
+{
+  "name": "chart",
+  "type": "registry:ui",
+  "title": "Chart",
+  "dependencies": [
+    "recharts"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/chart.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/chart.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

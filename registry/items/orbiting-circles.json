@@ -1,0 +1,23 @@
+{
+  "name": "orbiting-circles",
+  "type": "registry:ui",
+  "title": "Orbiting Circles",
+  "description": "Children spaced on a circle that slowly turns, staying upright.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/orbiting-circles.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/orbiting-circles.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

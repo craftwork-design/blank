@@ -1,0 +1,25 @@
+{
+  "name": "item",
+  "type": "registry:ui",
+  "title": "Item",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/item.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/item.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

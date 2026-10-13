@@ -1,0 +1,23 @@
+{
+  "name": "typing-animation",
+  "type": "registry:ui",
+  "title": "Typing Animation",
+  "description": "Types text out character by character, or cycles through several strings.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/typing-animation.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/typing-animation.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

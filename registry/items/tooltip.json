@@ -1,0 +1,22 @@
+{
+  "name": "tooltip",
+  "type": "registry:ui",
+  "title": "Tooltip",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/tooltip.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/tooltip.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

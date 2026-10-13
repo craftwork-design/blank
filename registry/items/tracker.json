@@ -1,0 +1,25 @@
+{
+  "name": "tracker",
+  "type": "registry:ui",
+  "title": "Tracker",
+  "description": "An uptime strip of status blocks with tooltips and keyboard navigation.",
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/tracker.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/tracker.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/tremorlabs/tremor/blob/main/src/components/Tracker/Tracker.tsx@ca4d588f47820ff3d514d37fa4ee08a4222dec11",
+    "license": "Apache-2.0"
+  }
+}

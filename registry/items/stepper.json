@@ -1,0 +1,26 @@
+{
+  "name": "stepper",
+  "type": "registry:ui",
+  "title": "Stepper",
+  "description": "Numbered steps for a multi-part flow, horizontal or vertical, with completed, active, loading and disabled states.",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/stepper.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/stepper.tsx"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/stepper.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+    "license": "MIT"
+  }
+}

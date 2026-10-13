@@ -1,0 +1,22 @@
+{
+  "name": "dropdown-menu",
+  "type": "registry:ui",
+  "title": "Dropdown Menu",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/dropdown-menu.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/dropdown-menu.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

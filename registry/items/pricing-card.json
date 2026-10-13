@@ -1,0 +1,19 @@
+{
+  "name": "pricing-card",
+  "type": "registry:ui",
+  "title": "Pricing Card",
+  "description": "A plan card with a price, a feature list and a call to action.",
+  "dependencies": ["lucide-react"],
+  "files": [
+    {
+      "path": "packages/ui/src/pricing-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/pricing-card.tsx"
+    }
+  ],
+  "categories": ["marketing"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

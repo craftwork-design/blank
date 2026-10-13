@@ -1,0 +1,23 @@
+{
+  "name": "number-ticker",
+  "type": "registry:ui",
+  "title": "Number Ticker",
+  "description": "Counts up to a number on a spring, with tabular digits.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/number-ticker.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/number-ticker.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

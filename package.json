@@ -1,0 +1,16 @@
+{
+  "name": "blank",
+  "version": "3.0.0",
+  "private": true,
+  "description": "React components for shadcn, in Blank's design language. Light and dark, Tailwind v4.",
+  "license": "MIT",
+  "homepage": "https://blank-3-ten.vercel.app",
+  "repository": "github:craftwork-design/blank",
+  "scripts": {
+    "registry:items": "node scripts/build-registry.mjs",
+    "registry:build": "node scripts/build-registry.mjs && npx shadcn@latest build registry.json -o public/r"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

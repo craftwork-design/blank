@@ -1,0 +1,18 @@
+{
+  "name": "card",
+  "type": "registry:ui",
+  "title": "Card",
+  "files": [
+    {
+      "path": "packages/ui/src/card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/card.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

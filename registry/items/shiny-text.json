@@ -1,0 +1,23 @@
+{
+  "name": "shiny-text",
+  "type": "registry:ui",
+  "title": "Shiny Text",
+  "description": "Muted text with a highlight sweeping across it.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/shiny-text.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/shiny-text.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

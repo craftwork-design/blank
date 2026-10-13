@@ -1,0 +1,27 @@
+{
+  "name": "hero-01",
+  "type": "registry:block",
+  "title": "Hero 01",
+  "description": "A centered hero with an announcement badge, a two-line headline, two pill CTAs and a framed product window built from Blank components: sidebar, stat cards with bar sparklines, filter tabs and a live job table.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": [
+    "@blank/avatar",
+    "@blank/badge",
+    "@blank/button",
+    "@blank/input-group",
+    "@blank/kbd",
+    "@blank/tabs"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/blocks/hero-01.tsx",
+      "type": "registry:block",
+      "target": "components/blocks/hero-01.tsx"
+    }
+  ],
+  "categories": ["hero", "marketing"],
+  "meta": {
+    "tier": "free",
+    "height": 980
+  }
+}

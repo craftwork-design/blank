@@ -1,0 +1,21 @@
+{
+  "name": "collapsible",
+  "type": "registry:ui",
+  "title": "Collapsible",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/collapsible.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/collapsible.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

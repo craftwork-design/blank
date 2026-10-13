@@ -1,0 +1,22 @@
+{
+  "name": "context-menu",
+  "type": "registry:ui",
+  "title": "Context Menu",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/context-menu.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/context-menu.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

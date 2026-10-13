@@ -1,0 +1,22 @@
+{
+  "name": "avatar",
+  "type": "registry:ui",
+  "title": "Avatar",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/avatar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/avatar.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

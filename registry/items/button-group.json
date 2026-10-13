@@ -1,0 +1,22 @@
+{
+  "name": "button-group",
+  "type": "registry:ui",
+  "title": "Button Group",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/button-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/button-group.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

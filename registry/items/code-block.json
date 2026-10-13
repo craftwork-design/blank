@@ -1,0 +1,20 @@
+{
+  "name": "code-block",
+  "type": "registry:ui",
+  "title": "Code Block",
+  "description": "A code panel with tabs, line numbers, highlighted lines and a copy button.",
+  "dependencies": ["lucide-react", "radix-ui"],
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "packages/ui/src/code-block.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/code-block.tsx"
+    }
+  ],
+  "categories": ["data-display"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

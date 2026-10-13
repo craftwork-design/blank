@@ -1,0 +1,25 @@
+{
+  "name": "form",
+  "type": "registry:ui",
+  "title": "Form",
+  "dependencies": [
+    "radix-ui",
+    "react-hook-form"
+  ],
+  "registryDependencies": [
+    "label"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/form.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/form.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

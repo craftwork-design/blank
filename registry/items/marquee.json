@@ -1,0 +1,45 @@
+{
+  "name": "marquee",
+  "type": "registry:ui",
+  "title": "Marquee",
+  "description": "An endless horizontal or vertical strip of content with edge fade, reverse, pause on hover and a reduced-motion pause.",
+  "files": [
+    {
+      "path": "packages/ui/src/marquee.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/marquee.tsx"
+    }
+  ],
+  "css": {
+    "@keyframes marquee": {
+      "from": {
+        "transform": "translateX(0)"
+      },
+      "to": {
+        "transform": "translateX(calc(-100% - var(--gap)))"
+      }
+    },
+    "@keyframes marquee-vertical": {
+      "from": {
+        "transform": "translateY(0)"
+      },
+      "to": {
+        "transform": "translateY(calc(-100% - var(--gap)))"
+      }
+    }
+  },
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/magicuidesign/magicui",
+      "path": "apps/www/registry/magicui/marquee.tsx",
+      "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+      "license": "MIT",
+      "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/marquee.tsx"
+    }
+  }
+}

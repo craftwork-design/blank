@@ -1,0 +1,23 @@
+{
+  "name": "use-hover-capable",
+  "type": "registry:hook",
+  "title": "Use Hover Capable",
+  "description": "True only on devices with a real hover (mouse or trackpad), so pointer-follow effects can skip touch screens.",
+  "files": [
+    {
+      "path": "packages/ui/hooks/use-hover-capable.ts",
+      "type": "registry:hook",
+      "target": "hooks/use-hover-capable.ts"
+    }
+  ],
+  "meta": {
+    "tier": "free",
+    "source": {
+      "repo": "https://github.com/starc007/ui-components",
+      "path": "lib/hooks/use-hover-capable.ts",
+      "sha": "9f19813",
+      "license": "MIT",
+      "url": "https://github.com/starc007/ui-components/blob/9f19813/lib/hooks/use-hover-capable.ts"
+    }
+  }
+}

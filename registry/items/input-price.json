@@ -1,0 +1,19 @@
+{
+  "name": "input-price",
+  "type": "registry:ui",
+  "title": "Input Price",
+  "description": "A currency amount field that accepts only digits and a capped decimal.",
+  "registryDependencies": ["input", "input-group"],
+  "files": [
+    {
+      "path": "packages/ui/src/input-price.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/input-price.tsx"
+    }
+  ],
+  "categories": ["forms"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

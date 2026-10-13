@@ -1,0 +1,20 @@
+{
+  "name": "noise-texture",
+  "type": "registry:ui",
+  "title": "Noise Texture",
+  "description": "A static SVG film-grain overlay for flat fills and gradients.",
+  "files": [
+    {
+      "path": "packages/ui/src/noise-texture.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/noise-texture.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

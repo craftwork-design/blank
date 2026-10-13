@@ -1,0 +1,27 @@
+{
+  "name": "spotlight-card",
+  "type": "registry:ui",
+  "title": "Spotlight Card",
+  "description": "A card whose border and surface light up under the cursor, colored from the brand and border tokens.",
+  "files": [
+    {
+      "path": "packages/ui/src/spotlight-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/spotlight-card.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/magicuidesign/magicui",
+      "path": "apps/www/registry/magicui/magic-card.tsx",
+      "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+      "license": "MIT",
+      "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/magic-card.tsx"
+    }
+  }
+}

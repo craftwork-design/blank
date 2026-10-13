@@ -1,0 +1,25 @@
+{
+  "name": "calendar",
+  "type": "registry:ui",
+  "title": "Calendar",
+  "dependencies": [
+    "lucide-react",
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/calendar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/calendar.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

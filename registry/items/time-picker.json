@@ -1,0 +1,22 @@
+{
+  "name": "time-picker",
+  "type": "registry:ui",
+  "title": "Time Picker",
+  "description": "A segmented time field: hours, minutes, optional seconds and AM/PM, each a keyboard-steppable spin button.",
+  "files": [
+    {
+      "path": "packages/ui/src/time-picker.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/time-picker.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/time-picker.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

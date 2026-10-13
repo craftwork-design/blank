@@ -1,0 +1,23 @@
+{
+  "name": "dot-pattern",
+  "type": "registry:ui",
+  "title": "Dot Pattern",
+  "description": "A dot grid for section backgrounds, with an optional brand-colored glow.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/dot-pattern.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/dot-pattern.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "direction",
+  "type": "registry:ui",
+  "title": "Direction",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/direction.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/direction.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

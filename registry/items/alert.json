@@ -1,0 +1,21 @@
+{
+  "name": "alert",
+  "type": "registry:ui",
+  "title": "Alert",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/alert.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/alert.tsx"
+    }
+  ],
+  "categories": [
+    "feedback"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

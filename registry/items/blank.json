@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blank",
+  "type": "registry:base",
+  "title": "Blank",
+  "description": "Sets a project up for Blank: the @blank and @blank-pro registries, the light and dark token sheet, and cn().",
+  "extends": "none",
+  "config": {
+    "style": "blank",
+    "iconLibrary": "lucide",
+    "registries": {
+      "@blank": "https://blank-3-ten.vercel.app/r/{name}.json",
+      "@blank-pro": {
+        "url": "https://blank-3-ten.vercel.app/r/pro/{name}.json",
+        "headers": {
+          "Authorization": "Bearer ${BLANK_LICENSE_KEY}"
+        }
+      }
+    }
+  },
+  "dependencies": [
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge",
+    "lucide-react",
+    "radix-ui",
+    "tw-animate-css"
+  ],
+  "registryDependencies": [
+    "https://blank-3-ten.vercel.app/r/theme.json"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/lib/utils.ts",
+      "type": "registry:lib",
+      "target": "lib/utils.ts"
+    }
+  ],
+  "meta": {
+    "tier": "free",
+    "generated": "scripts/build-registry.mjs"
+  }
+}

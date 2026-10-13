@@ -1,0 +1,26 @@
+{
+  "name": "announcement",
+  "type": "registry:ui",
+  "title": "Announcement",
+  "description": "A pill above a hero headline: an optional tag, a title and an arrow, rendered as a link with asChild.",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/announcement.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/announcement.tsx"
+    }
+  ],
+  "categories": [
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/shadcnblocks/kibo/blob/main/packages/announcement/index.tsx@3d63cdb15b79d972e3dc38a10997987672f9b263",
+    "license": "MIT"
+  }
+}

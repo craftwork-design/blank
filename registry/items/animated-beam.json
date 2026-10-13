@@ -1,0 +1,23 @@
+{
+  "name": "animated-beam",
+  "type": "registry:ui",
+  "title": "Animated Beam",
+  "description": "A curved path between two elements with a beam of light running along it.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/animated-beam.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/animated-beam.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "feature-card",
+  "type": "registry:ui",
+  "title": "Feature Card",
+  "description": "A marketing card pairing media or an icon with a headline and actions.",
+  "dependencies": ["class-variance-authority"],
+  "files": [
+    {
+      "path": "packages/ui/src/feature-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/feature-card.tsx"
+    }
+  ],
+  "categories": ["marketing"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

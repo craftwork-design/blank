@@ -1,0 +1,20 @@
+{
+  "name": "input-file",
+  "type": "registry:ui",
+  "title": "Input File",
+  "description": "A drag-and-drop file field with previews, built on the native file input.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "packages/ui/src/input-file.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/input-file.tsx"
+    }
+  ],
+  "categories": ["forms"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

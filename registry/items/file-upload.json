@@ -1,0 +1,29 @@
+{
+  "name": "file-upload",
+  "type": "registry:ui",
+  "title": "File Upload",
+  "description": "A dropzone with a file list, previews, upload progress, removal and accept/size/count validation.",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/file-upload.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/file-upload.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/file-upload.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

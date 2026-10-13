@@ -1,0 +1,23 @@
+{
+  "name": "scramble-text",
+  "type": "registry:ui",
+  "title": "Scramble Text",
+  "description": "Scrambles text into random characters and resolves it left to right.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/scramble-text.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/scramble-text.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

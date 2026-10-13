@@ -1,0 +1,27 @@
+{
+  "name": "combobox",
+  "type": "registry:ui",
+  "title": "Combobox",
+  "dependencies": [
+    "cmdk",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button",
+    "input-group",
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/combobox.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/combobox.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

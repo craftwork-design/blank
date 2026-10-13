@@ -1,0 +1,33 @@
+{
+  "name": "tilt-card",
+  "type": "registry:ui",
+  "title": "Tilt Card",
+  "description": "A card that tilts toward the pointer with a following glare; off on touch screens and under reduced motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@blank/use-hover-capable"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/tilt-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/tilt-card.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/starc007/ui-components",
+      "path": "components/motion/tilt-card.tsx",
+      "sha": "9f19813",
+      "license": "MIT",
+      "url": "https://github.com/starc007/ui-components/blob/9f19813/components/motion/tilt-card.tsx"
+    }
+  }
+}

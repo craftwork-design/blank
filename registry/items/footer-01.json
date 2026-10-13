@@ -1,0 +1,30 @@
+{
+  "name": "footer-01",
+  "type": "registry:block",
+  "title": "Footer 01",
+  "description": "A four-column link footer with a logo, a newsletter field with a subscribed state, a live status link and social icon buttons.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@blank/badge",
+    "@blank/button",
+    "@blank/field",
+    "@blank/input"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/blocks/footer-01.tsx",
+      "type": "registry:block",
+      "target": "components/blocks/footer-01.tsx"
+    }
+  ],
+  "categories": [
+    "footer",
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "height": 490
+  }
+}

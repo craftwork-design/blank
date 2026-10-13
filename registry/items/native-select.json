@@ -1,0 +1,21 @@
+{
+  "name": "native-select",
+  "type": "registry:ui",
+  "title": "Native Select",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/native-select.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/native-select.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "timeline",
+  "type": "registry:ui",
+  "title": "Timeline",
+  "description": "A vertical or horizontal sequence of dated events with indicators, titles and content.",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/timeline.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/timeline.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/timeline.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+    "license": "MIT"
+  }
+}

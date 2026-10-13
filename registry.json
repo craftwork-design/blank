@@ -1,0 +1,3360 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "homepage": "https://blank-3-ten.vercel.app",
+  "name": "blank",
+  "items": [
+    {
+      "name": "blank",
+      "type": "registry:base",
+      "title": "Blank",
+      "description": "Sets a project up for Blank: the @blank and @blank-pro registries, the light and dark token sheet, and cn().",
+      "extends": "none",
+      "config": {
+        "style": "blank",
+        "iconLibrary": "lucide",
+        "registries": {
+          "@blank": "https://blank-3-ten.vercel.app/r/{name}.json",
+          "@blank-pro": {
+            "url": "https://blank-3-ten.vercel.app/r/pro/{name}.json",
+            "headers": {
+              "Authorization": "Bearer ${BLANK_LICENSE_KEY}"
+            }
+          }
+        }
+      },
+      "dependencies": [
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge",
+        "lucide-react",
+        "radix-ui",
+        "tw-animate-css"
+      ],
+      "registryDependencies": [
+        "https://blank-3-ten.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "generated": "scripts/build-registry.mjs"
+      }
+    },
+    {
+      "name": "theme",
+      "type": "registry:theme",
+      "title": "Blank Theme",
+      "description": "Blank's palette, semantic roles for light and dark, Tailwind theme mapping and base layer. Install it once, before any component.",
+      "cssVars": {
+        "theme": {
+          "font-sans": "var(--font-inter), ui-sans-serif, system-ui, sans-serif",
+          "font-mono": "ui-monospace, SFMono-Regular, \"SF Mono\", Consolas, Menlo, monospace",
+          "color-background": "var(--background)",
+          "color-foreground": "var(--foreground)",
+          "color-card": "var(--card)",
+          "color-card-foreground": "var(--card-foreground)",
+          "color-popover": "var(--popover)",
+          "color-popover-foreground": "var(--popover-foreground)",
+          "color-primary": "var(--primary)",
+          "color-primary-foreground": "var(--primary-foreground)",
+          "color-secondary": "var(--secondary)",
+          "color-secondary-foreground": "var(--secondary-foreground)",
+          "color-muted": "var(--muted)",
+          "color-muted-foreground": "var(--muted-foreground)",
+          "color-accent": "var(--accent)",
+          "color-accent-foreground": "var(--accent-foreground)",
+          "color-brand": "var(--brand)",
+          "color-brand-hover": "var(--brand-hover)",
+          "color-brand-subtle": "var(--brand-subtle)",
+          "color-brand-foreground": "var(--brand-foreground)",
+          "color-destructive": "var(--destructive)",
+          "color-destructive-foreground": "var(--destructive-foreground)",
+          "color-destructive-subtle-foreground": "var(--destructive-subtle-foreground)",
+          "color-border": "var(--border)",
+          "color-input": "var(--input)",
+          "color-input-field": "var(--input-field)",
+          "color-input-hover": "var(--input-hover)",
+          "color-input-disabled": "var(--input-disabled)",
+          "color-ring": "var(--ring)",
+          "color-inverted": "var(--inverted)",
+          "color-inverted-foreground": "var(--inverted-foreground)",
+          "color-overlay": "var(--overlay)",
+          "color-overlay-foreground": "var(--overlay-foreground)",
+          "color-sidebar": "var(--sidebar)",
+          "color-sidebar-foreground": "var(--sidebar-foreground)",
+          "color-sidebar-primary": "var(--sidebar-primary)",
+          "color-sidebar-primary-foreground": "var(--sidebar-primary-foreground)",
+          "color-sidebar-accent": "var(--sidebar-accent)",
+          "color-sidebar-accent-foreground": "var(--sidebar-accent-foreground)",
+          "color-sidebar-border": "var(--sidebar-border)",
+          "color-sidebar-ring": "var(--sidebar-ring)",
+          "color-success": "var(--success)",
+          "color-success-subtle": "var(--success-subtle)",
+          "color-success-input": "var(--success-input)",
+          "color-success-primary": "var(--success-primary)",
+          "color-success-primary-foreground": "var(--success-primary-foreground)",
+          "color-success-foreground": "var(--success-foreground)",
+          "color-warning": "var(--warning)",
+          "color-warning-subtle": "var(--warning-subtle)",
+          "color-warning-input": "var(--warning-input)",
+          "color-warning-primary": "var(--warning-primary)",
+          "color-warning-primary-foreground": "var(--warning-primary-foreground)",
+          "color-warning-foreground": "var(--warning-foreground)",
+          "color-info": "var(--info)",
+          "color-info-subtle": "var(--info-subtle)",
+          "color-info-input": "var(--info-input)",
+          "color-info-primary": "var(--info-primary)",
+          "color-info-primary-foreground": "var(--info-primary-foreground)",
+          "color-info-foreground": "var(--info-foreground)",
+          "color-danger": "var(--danger)",
+          "color-danger-subtle": "var(--danger-subtle)",
+          "color-danger-input": "var(--danger-input)",
+          "color-danger-primary": "var(--danger-primary)",
+          "color-danger-primary-foreground": "var(--danger-primary-foreground)",
+          "color-danger-foreground": "var(--danger-foreground)",
+          "color-item-outline": "var(--item-outline)",
+          "color-item-outline-hover": "var(--item-outline-hover)",
+          "color-item-secondary": "var(--item-secondary)",
+          "color-item-secondary-hover": "var(--item-secondary-hover)",
+          "color-item-destructive-subtle": "var(--item-destructive-subtle)",
+          "color-item-destructive-subtle-hover": "var(--item-destructive-subtle-hover)",
+          "color-item-selected": "var(--item-selected)",
+          "color-item-selected-border": "var(--item-selected-border)",
+          "color-focus-ring": "var(--focus-ring)",
+          "color-error-ring": "var(--error-ring)",
+          "color-track": "var(--track)",
+          "shadow-field": "var(--field-shadow)",
+          "shadow-thumb": "var(--thumb-shadow)",
+          "shadow-tooltip": "var(--tooltip-shadow)",
+          "color-chart-1": "var(--chart-1)",
+          "color-chart-2": "var(--chart-2)",
+          "color-chart-3": "var(--chart-3)",
+          "color-chart-4": "var(--chart-4)",
+          "color-chart-5": "var(--chart-5)",
+          "color-device": "var(--device)",
+          "color-device-frame": "var(--device-frame)",
+          "radius-none": "0px",
+          "radius-2xs": "calc(var(--radius) - 8px)",
+          "radius-xs": "calc(var(--radius) - 6px)",
+          "radius-sm": "calc(var(--radius) - 4px)",
+          "radius-md": "calc(var(--radius) - 2px)",
+          "radius-lg": "var(--radius)",
+          "radius-xl": "calc(var(--radius) + 2px)",
+          "radius-2xl": "calc(var(--radius) + 6px)",
+          "radius-3xl": "calc(var(--radius) + 10px)",
+          "radius-full": "9999px",
+          "animate-accordion-down": "accordion-down 0.2s ease-out",
+          "animate-accordion-up": "accordion-up 0.2s ease-out"
+        },
+        "light": {
+          "neutral-50": "#fbfbfc",
+          "neutral-100": "#f7f7f8",
+          "neutral-200": "#e9eaec",
+          "neutral-300": "#dee0e3",
+          "neutral-400": "#c8cad0",
+          "neutral-500": "#9ba0aa",
+          "neutral-600": "#5e636e",
+          "neutral-700": "#333842",
+          "neutral-800": "#1f2228",
+          "neutral-900": "#14151a",
+          "neutral-950": "#0b0c0e",
+          "purple-50": "#f7f1fd",
+          "purple-100": "#ece0fb",
+          "purple-200": "#dcc6f7",
+          "purple-300": "#c4a1f1",
+          "purple-400": "#ab79ec",
+          "purple-500": "#924fe8",
+          "purple-600": "#741de2",
+          "purple-700": "#5f17b8",
+          "purple-800": "#4a1290",
+          "purple-900": "#2f0b5c",
+          "purple-950": "#1c0736",
+          "green-50": "#edfdf4",
+          "green-100": "#d1fae4",
+          "green-200": "#9af4c3",
+          "green-500": "#26bd6c",
+          "green-600": "#1e9857",
+          "green-700": "#177543",
+          "green-900": "#0f4c2c",
+          "green-950": "#072213",
+          "amber-50": "#fef4ec",
+          "amber-100": "#fdead8",
+          "amber-200": "#fad0a9",
+          "amber-500": "#f48e2f",
+          "amber-600": "#d97316",
+          "amber-700": "#9b510d",
+          "amber-900": "#613105",
+          "amber-950": "#301903",
+          "blue-50": "#f0f4fe",
+          "blue-100": "#e3eafd",
+          "blue-200": "#b4c7f8",
+          "blue-500": "#4778f5",
+          "blue-600": "#3368f0",
+          "blue-700": "#2452c1",
+          "blue-900": "#07296a",
+          "blue-950": "#03153a",
+          "red-50": "#fdf2f1",
+          "red-100": "#fce5e4",
+          "red-200": "#f7c3c0",
+          "red-500": "#e6483d",
+          "red-600": "#d12f24",
+          "red-700": "#ab251c",
+          "red-900": "#64120d",
+          "red-950": "#360a07",
+          "white": "#ffffff",
+          "black": "#000000",
+          "radius": "0.625rem",
+          "background": "var(--white)",
+          "foreground": "var(--neutral-900)",
+          "card": "var(--white)",
+          "card-foreground": "var(--neutral-900)",
+          "popover": "var(--white)",
+          "popover-foreground": "var(--neutral-900)",
+          "primary": "var(--neutral-900)",
+          "primary-foreground": "var(--white)",
+          "secondary": "var(--neutral-100)",
+          "secondary-foreground": "var(--neutral-900)",
+          "muted": "var(--neutral-100)",
+          "muted-foreground": "var(--neutral-600)",
+          "accent": "var(--neutral-100)",
+          "accent-foreground": "var(--neutral-900)",
+          "brand": "var(--purple-500)",
+          "brand-hover": "var(--purple-600)",
+          "brand-subtle": "var(--purple-50)",
+          "brand-foreground": "var(--white)",
+          "destructive": "var(--red-500)",
+          "destructive-foreground": "var(--white)",
+          "destructive-subtle-foreground": "var(--red-700)",
+          "border": "var(--neutral-300)",
+          "input": "var(--neutral-300)",
+          "input-field": "var(--white)",
+          "input-hover": "var(--neutral-400)",
+          "input-disabled": "var(--neutral-50)",
+          "ring": "var(--brand)",
+          "inverted": "var(--neutral-950)",
+          "inverted-foreground": "var(--white)",
+          "overlay": "color-mix(in oklab, var(--neutral-950) 55%, transparent)",
+          "overlay-foreground": "var(--white)",
+          "sidebar": "var(--neutral-100)",
+          "sidebar-foreground": "var(--neutral-900)",
+          "sidebar-primary": "var(--neutral-900)",
+          "sidebar-primary-foreground": "var(--white)",
+          "sidebar-accent": "var(--neutral-200)",
+          "sidebar-accent-foreground": "var(--neutral-900)",
+          "sidebar-border": "var(--neutral-200)",
+          "sidebar-ring": "var(--brand)",
+          "success": "var(--green-50)",
+          "success-subtle": "var(--green-100)",
+          "success-input": "var(--green-200)",
+          "success-primary": "var(--green-500)",
+          "success-primary-foreground": "var(--white)",
+          "success-foreground": "var(--green-700)",
+          "warning": "var(--amber-50)",
+          "warning-subtle": "var(--amber-100)",
+          "warning-input": "var(--amber-200)",
+          "warning-primary": "var(--amber-500)",
+          "warning-primary-foreground": "var(--white)",
+          "warning-foreground": "var(--amber-700)",
+          "info": "var(--blue-50)",
+          "info-subtle": "var(--blue-100)",
+          "info-input": "var(--blue-200)",
+          "info-primary": "var(--blue-500)",
+          "info-primary-foreground": "var(--white)",
+          "info-foreground": "var(--blue-700)",
+          "danger": "var(--red-50)",
+          "danger-subtle": "var(--red-100)",
+          "danger-input": "var(--red-200)",
+          "danger-primary": "var(--red-500)",
+          "danger-primary-foreground": "var(--white)",
+          "danger-foreground": "var(--red-700)",
+          "item-outline": "var(--white)",
+          "item-outline-hover": "var(--neutral-100)",
+          "item-secondary": "color-mix(in oklab, var(--neutral-900) 5%, transparent)",
+          "item-secondary-hover": "color-mix(in oklab, var(--neutral-900) 10%, transparent)",
+          "item-destructive-subtle": "color-mix(in oklab, var(--red-500) 6%, transparent)",
+          "item-destructive-subtle-hover": "color-mix(in oklab, var(--red-500) 12%, transparent)",
+          "item-selected": "color-mix(in oklab, var(--brand) 8%, transparent)",
+          "item-selected-border": "color-mix(in oklab, var(--brand) 20%, transparent)",
+          "focus-ring": "color-mix(in oklab, var(--brand) 35%, transparent)",
+          "error-ring": "color-mix(in oklab, var(--destructive) 25%, transparent)",
+          "track": "color-mix(in oklab, var(--neutral-900) 8%, transparent)",
+          "field-shadow": "0 1px 2px color-mix(in oklab, var(--neutral-900) 5%, transparent), inset 0 -1px 1px color-mix(in oklab, var(--black) 10%, transparent)",
+          "thumb-shadow": "0 36px 80px color-mix(in oklab, var(--black) 5%, transparent), 0 13px 29px color-mix(in oklab, var(--black) 3%, transparent), 0 6px 14px color-mix(in oklab, var(--black) 3%, transparent), 0 3px 7px color-mix(in oklab, var(--black) 2%, transparent), 0 1px 3px color-mix(in oklab, var(--black) 2%, transparent)",
+          "tooltip-shadow": "0 3px 10px -2px color-mix(in oklab, var(--neutral-900) 2%, transparent), 0 10px 16px -3px color-mix(in oklab, var(--neutral-900) 5%, transparent)",
+          "chart-1": "var(--blue-500)",
+          "chart-2": "var(--green-500)",
+          "chart-3": "var(--amber-500)",
+          "chart-4": "var(--red-500)",
+          "chart-5": "var(--purple-500)",
+          "device": "var(--neutral-950)",
+          "device-frame": "var(--neutral-300)"
+        },
+        "dark": {
+          "background": "var(--neutral-950)",
+          "foreground": "var(--white)",
+          "card": "var(--neutral-950)",
+          "card-foreground": "var(--white)",
+          "popover": "var(--neutral-800)",
+          "popover-foreground": "var(--white)",
+          "primary": "var(--white)",
+          "primary-foreground": "var(--neutral-950)",
+          "secondary": "var(--neutral-800)",
+          "secondary-foreground": "var(--white)",
+          "muted": "var(--neutral-800)",
+          "muted-foreground": "var(--neutral-400)",
+          "accent": "var(--neutral-700)",
+          "accent-foreground": "var(--white)",
+          "brand": "var(--purple-500)",
+          "brand-hover": "var(--purple-400)",
+          "brand-subtle": "var(--purple-950)",
+          "brand-foreground": "var(--white)",
+          "destructive": "var(--red-500)",
+          "destructive-foreground": "var(--white)",
+          "destructive-subtle-foreground": "var(--red-200)",
+          "border": "color-mix(in oklab, var(--white) 10%, transparent)",
+          "input": "color-mix(in oklab, var(--white) 15%, transparent)",
+          "input-field": "color-mix(in oklab, var(--white) 3%, transparent)",
+          "input-hover": "color-mix(in oklab, var(--white) 24%, transparent)",
+          "input-disabled": "color-mix(in oklab, var(--white) 8%, transparent)",
+          "inverted": "var(--white)",
+          "inverted-foreground": "var(--neutral-950)",
+          "overlay": "color-mix(in oklab, var(--neutral-950) 65%, transparent)",
+          "overlay-foreground": "var(--white)",
+          "sidebar": "var(--neutral-900)",
+          "sidebar-foreground": "var(--white)",
+          "sidebar-primary": "var(--white)",
+          "sidebar-primary-foreground": "var(--neutral-950)",
+          "sidebar-accent": "var(--neutral-700)",
+          "sidebar-accent-foreground": "var(--white)",
+          "sidebar-border": "color-mix(in oklab, var(--white) 10%, transparent)",
+          "success": "var(--green-950)",
+          "success-subtle": "var(--green-900)",
+          "success-input": "var(--green-500)",
+          "success-foreground": "var(--green-200)",
+          "warning": "var(--amber-950)",
+          "warning-subtle": "var(--amber-900)",
+          "warning-input": "var(--amber-500)",
+          "warning-foreground": "var(--amber-200)",
+          "info": "var(--blue-950)",
+          "info-subtle": "var(--blue-900)",
+          "info-input": "var(--blue-500)",
+          "info-foreground": "var(--blue-200)",
+          "danger": "var(--red-950)",
+          "danger-subtle": "var(--red-900)",
+          "danger-input": "var(--red-500)",
+          "danger-foreground": "var(--red-200)",
+          "item-outline": "var(--neutral-900)",
+          "item-outline-hover": "var(--neutral-800)",
+          "item-secondary": "color-mix(in oklab, var(--white) 10%, transparent)",
+          "item-secondary-hover": "color-mix(in oklab, var(--white) 15%, transparent)",
+          "item-destructive-subtle": "color-mix(in oklab, var(--red-500) 20%, transparent)",
+          "item-destructive-subtle-hover": "color-mix(in oklab, var(--red-500) 30%, transparent)",
+          "item-selected": "color-mix(in oklab, var(--brand) 18%, transparent)",
+          "item-selected-border": "color-mix(in oklab, var(--brand) 35%, transparent)",
+          "focus-ring": "color-mix(in oklab, var(--brand) 45%, transparent)",
+          "error-ring": "color-mix(in oklab, var(--destructive) 40%, transparent)",
+          "track": "color-mix(in oklab, var(--white) 15%, transparent)",
+          "field-shadow": "0 1px 2px color-mix(in oklab, var(--black) 30%, transparent), inset 0 -1px 1px color-mix(in oklab, var(--black) 20%, transparent)",
+          "device": "var(--black)",
+          "device-frame": "var(--neutral-700)"
+        }
+      },
+      "css": {
+        "[data-inverted]": {
+          "--popover": "var(--inverted)",
+          "--popover-foreground": "var(--inverted-foreground)",
+          "--muted-foreground": "color-mix(in oklab, var(--inverted-foreground) 65%, transparent)",
+          "--border": "color-mix(in oklab, var(--inverted-foreground) 15%, transparent)",
+          "--item-secondary": "color-mix(in oklab, var(--inverted-foreground) 10%, transparent)",
+          "--item-secondary-hover": "color-mix(in oklab, var(--inverted-foreground) 15%, transparent)"
+        },
+        "@keyframes accordion-down": {
+          "from": {
+            "height": "0"
+          },
+          "to": {
+            "height": "var(--radix-accordion-content-height)"
+          }
+        },
+        "@keyframes accordion-up": {
+          "from": {
+            "height": "var(--radix-accordion-content-height)"
+          },
+          "to": {
+            "height": "0"
+          }
+        },
+        "@layer base": {
+          "[data-slot]": {
+            "border-color": "var(--border)"
+          },
+          "body": {
+            "background-color": "var(--background)",
+            "color": "var(--foreground)"
+          }
+        },
+        "@keyframes marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(calc(-100% - var(--gap)))"
+          }
+        },
+        "@keyframes marquee-vertical": {
+          "from": {
+            "transform": "translateY(0)"
+          },
+          "to": {
+            "transform": "translateY(calc(-100% - var(--gap)))"
+          }
+        },
+        "@keyframes shimmer-slide": {
+          "to": {
+            "transform": "translate(calc(100cqw - 100%), 0)"
+          }
+        },
+        "@keyframes spin-around": {
+          "0%": {
+            "transform": "translateZ(0) rotate(0)"
+          },
+          "15%,\n  35%": {
+            "transform": "translateZ(0) rotate(90deg)"
+          },
+          "65%,\n  85%": {
+            "transform": "translateZ(0) rotate(270deg)"
+          },
+          "100%": {
+            "transform": "translateZ(0) rotate(360deg)"
+          }
+        }
+      },
+      "meta": {
+        "tier": "free",
+        "generated": "scripts/build-registry.mjs from packages/ui/styles/globals.css"
+      }
+    },
+    {
+      "name": "use-hover-capable",
+      "type": "registry:hook",
+      "title": "Use Hover Capable",
+      "description": "True only on devices with a real hover (mouse or trackpad), so pointer-follow effects can skip touch screens.",
+      "files": [
+        {
+          "path": "packages/ui/hooks/use-hover-capable.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-hover-capable.ts"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "source": {
+          "repo": "https://github.com/starc007/ui-components",
+          "path": "lib/hooks/use-hover-capable.ts",
+          "sha": "9f19813",
+          "license": "MIT",
+          "url": "https://github.com/starc007/ui-components/blob/9f19813/lib/hooks/use-hover-capable.ts"
+        }
+      }
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "Use Mobile",
+      "files": [
+        {
+          "path": "packages/ui/hooks/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-mobile.ts"
+        }
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/accordion.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/alert.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert-dialog.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "android-frame",
+      "type": "registry:ui",
+      "title": "Android Frame",
+      "description": "A Pixel-style handset drawn in CSS with a punch-hole camera and right-side buttons, at true proportions at any width.",
+      "files": [
+        {
+          "path": "packages/ui/src/android-frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/android-frame.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "animated-background",
+      "type": "registry:ui",
+      "title": "Animated Background",
+      "description": "A highlight that slides behind the active or hovered item: tabs, menus, segmented controls.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/animated-background.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/animated-background.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/ibelick/motion-primitives/blob/main/components/core/animated-background.tsx@120f64f6ca60348e251f929e9c81f11ccbe45eda",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "animated-beam",
+      "type": "registry:ui",
+      "title": "Animated Beam",
+      "description": "A curved path between two elements with a beam of light running along it.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/animated-beam.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/animated-beam.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "animated-grid-pattern",
+      "type": "registry:ui",
+      "title": "Animated Grid Pattern",
+      "description": "A background grid whose cells fade in and out at random.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/animated-grid-pattern.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/animated-grid-pattern.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "announcement",
+      "type": "registry:ui",
+      "title": "Announcement",
+      "description": "A pill above a hero headline: an optional tag, a title and an arrow, rendered as a link with asChild.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/announcement.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/announcement.tsx"
+        }
+      ],
+      "categories": [
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/shadcnblocks/kibo/blob/main/packages/announcement/index.tsx@3d63cdb15b79d972e3dc38a10997987672f9b263",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/aspect-ratio.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/aspect-ratio.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/avatar.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "banner",
+      "type": "registry:ui",
+      "title": "Banner",
+      "description": "A page-level announcement strip with actions and a dismiss button.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/banner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/banner.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "bar-list",
+      "type": "registry:ui",
+      "title": "Bar List",
+      "description": "Ranked horizontal bars with a label and a formatted value on each row.",
+      "files": [
+        {
+          "path": "packages/ui/src/bar-list.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/bar-list.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/tremorlabs/tremor/blob/main/src/components/BarList/BarList.tsx@ca4d588f47820ff3d514d37fa4ee08a4222dec11",
+        "license": "Apache-2.0"
+      }
+    },
+    {
+      "name": "bento-grid",
+      "type": "registry:ui",
+      "title": "Bento Grid",
+      "description": "A grid of feature tiles with icon, copy, a background slot and a call to action that rises on hover.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/bento-grid.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/bento-grid.tsx"
+        }
+      ],
+      "categories": [
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/bento-grid.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/bento-grid.tsx"
+        }
+      }
+    },
+    {
+      "name": "blur-fade",
+      "type": "registry:ui",
+      "title": "Blur Fade",
+      "description": "Fades content in from a blur and a small offset, on mount or on scroll.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/blur-fade.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/blur-fade.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "border-beam",
+      "type": "registry:ui",
+      "title": "Border Beam",
+      "description": "A short beam of light that travels around an element's border.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/border-beam.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/border-beam.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/breadcrumb.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/breadcrumb.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "browser-window",
+      "type": "registry:ui",
+      "title": "Browser Window",
+      "description": "Browser chrome around a screenshot or a live page, for product visuals.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/browser-window.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/browser-window.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/button-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "dependencies": [
+        "lucide-react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "files": [
+        {
+          "path": "packages/ui/src/card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/card.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "dependencies": [
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/carousel.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/carousel.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/chart.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/chart.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/checkbox.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "chip",
+      "type": "registry:ui",
+      "title": "Chip",
+      "description": "A compact, selectable tag with an optional avatar and a dismiss button.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/chip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/chip.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "A code panel with tabs, line numbers, highlighted lines and a copy button.",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/code-block.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/code-block.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "code-window",
+      "type": "registry:ui",
+      "title": "Code Window",
+      "description": "Editor chrome with switchable file tabs and numbered lines, with no syntax-highlighting dependency.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/code-window.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/code-window.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/collapsible.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/collapsible.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Color Picker",
+      "description": "A popover with a saturation area, hue slider, hex/RGB/HSL input, presets and an eyedropper where the browser has one.",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button",
+        "@blank/input",
+        "@blank/popover",
+        "@blank/select"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/color-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/color-picker.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/color-picker.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button",
+        "@blank/input-group",
+        "@blank/popover"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/combobox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/combobox.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/dialog",
+        "@blank/input-group"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/command.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/command.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "compare-slider",
+      "type": "registry:ui",
+      "title": "Compare Slider",
+      "description": "A before/after comparison with a draggable divider, arrow-key control and a vertical option.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/compare-slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/compare-slider.tsx"
+        }
+      ],
+      "categories": [
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/compare-slider.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/context-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/context-menu.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:ui",
+      "title": "Copy Button",
+      "description": "Copies text to the clipboard and confirms it with an icon morph, a tooltip and a live-region announcement.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@blank/button",
+        "@blank/tooltip"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/copy-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/copy-button.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/educlopez/smoothui",
+          "path": "packages/smoothui/components/button-copy/index.tsx",
+          "sha": "b6312bce2b6f2ed95d8a6e98a592857884f5ea9e",
+          "license": "MIT",
+          "url": "https://github.com/educlopez/smoothui/blob/b6312bce2b6f2ed95d8a6e98a592857884f5ea9e/packages/smoothui/components/button-copy/index.tsx"
+        }
+      }
+    },
+    {
+      "name": "cta-01",
+      "type": "registry:block",
+      "title": "CTA 01",
+      "description": "A centered call-to-action band with a two-tone headline, a primary and a secondary pill button, and a short reassurance line.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/blocks/cta-01.tsx",
+          "type": "registry:block",
+          "target": "components/blocks/cta-01.tsx"
+        }
+      ],
+      "categories": [
+        "cta",
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "height": 730
+      }
+    },
+    {
+      "name": "device-stack",
+      "type": "registry:ui",
+      "title": "Device Stack",
+      "description": "The hero composition: a MacBook with an iPhone standing in front of one corner, each taking its own screen content.",
+      "registryDependencies": [
+        "@blank/iphone-frame",
+        "@blank/macbook-frame"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/device-stack.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/device-stack.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dialog.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/direction.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/direction.tsx"
+        }
+      ],
+      "categories": [
+        "layout"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "dot-pattern",
+      "type": "registry:ui",
+      "title": "Dot Pattern",
+      "description": "A dot grid for section backgrounds, with an optional brand-colored glow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/dot-pattern.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dot-pattern.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "dependencies": [
+        "lucide-react",
+        "vaul"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/drawer.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/drawer.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropdown-menu.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/empty.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/empty.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "expandable",
+      "type": "registry:ui",
+      "title": "Expandable",
+      "description": "A surface that springs open in place to reveal more content.",
+      "dependencies": [
+        "motion",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/expandable.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/expandable.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "feature-card",
+      "type": "registry:ui",
+      "title": "Feature Card",
+      "description": "A marketing card pairing media or an icon with a headline and actions.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/feature-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/feature-card.tsx"
+        }
+      ],
+      "categories": [
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "features-01",
+      "type": "registry:block",
+      "title": "Features 01",
+      "description": "A two-tone section heading with a short intro, followed by a six-cell icon grid separated by hairlines. Three columns on desktop, two on tablet, one on mobile.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/blocks/features-01.tsx",
+          "type": "registry:block",
+          "target": "components/blocks/features-01.tsx"
+        }
+      ],
+      "categories": [
+        "features",
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "height": 820
+      }
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@blank/label",
+        "@blank/separator"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/field.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/field.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "file-tree",
+      "type": "registry:ui",
+      "title": "File Tree",
+      "description": "An accessible file and folder tree with arrow-key navigation, type-ahead, selection and animated folders.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/file-tree.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/file-tree.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/file-tree.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/file-tree.tsx"
+        }
+      }
+    },
+    {
+      "name": "file-upload",
+      "type": "registry:ui",
+      "title": "File Upload",
+      "description": "A dropzone with a file list, previews, upload progress, removal and accept/size/count validation.",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/progress"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/file-upload.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/file-upload.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/file-upload.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "flickering-grid",
+      "type": "registry:ui",
+      "title": "Flickering Grid",
+      "description": "A canvas of small squares that flicker, colored from a CSS token.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/flickering-grid.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/flickering-grid.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "footer-01",
+      "type": "registry:block",
+      "title": "Footer 01",
+      "description": "A four-column link footer with a logo, a newsletter field with a subscribed state, a live status link and social icon buttons.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/badge",
+        "@blank/button",
+        "@blank/field",
+        "@blank/input"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/blocks/footer-01.tsx",
+          "type": "registry:block",
+          "target": "components/blocks/footer-01.tsx"
+        }
+      ],
+      "categories": [
+        "footer",
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "height": 490
+      }
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "dependencies": [
+        "radix-ui",
+        "react-hook-form"
+      ],
+      "registryDependencies": [
+        "@blank/label"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/form.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/form.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "grid-pattern",
+      "type": "registry:ui",
+      "title": "Grid Pattern",
+      "description": "A static SVG grid for section backgrounds, with optional highlighted cells.",
+      "files": [
+        {
+          "path": "packages/ui/src/grid-pattern.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/grid-pattern.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "hero-01",
+      "type": "registry:block",
+      "title": "Hero 01",
+      "description": "A centered hero with an announcement badge, a two-line headline, two pill CTAs and a framed product window built from Blank components: sidebar, stat cards with bar sparklines, filter tabs and a live job table.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/avatar",
+        "@blank/badge",
+        "@blank/button",
+        "@blank/input-group",
+        "@blank/kbd",
+        "@blank/tabs"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/blocks/hero-01.tsx",
+          "type": "registry:block",
+          "target": "components/blocks/hero-01.tsx"
+        }
+      ],
+      "categories": [
+        "hero",
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "height": 980
+      }
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/hover-card.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "input-file",
+      "type": "registry:ui",
+      "title": "Input File",
+      "description": "A drag-and-drop file field with previews, built on the native file input.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/input-file.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-file.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@blank/button",
+        "@blank/input",
+        "@blank/textarea"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/input-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "dependencies": [
+        "input-otp",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/input-otp.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-otp.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "input-price",
+      "type": "registry:ui",
+      "title": "Input Price",
+      "description": "A currency amount field that accepts only digits and a capped decimal.",
+      "registryDependencies": [
+        "@blank/input",
+        "@blank/input-group"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/input-price.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-price.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "interactive-hover-button",
+      "type": "registry:ui",
+      "title": "Interactive Hover Button",
+      "description": "Blank's button with a dot that floods it on hover while the label slides back in with an arrow.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/interactive-hover-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/interactive-hover-button.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/interactive-hover-button.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/interactive-hover-button.tsx"
+        }
+      }
+    },
+    {
+      "name": "ipad-frame",
+      "type": "registry:ui",
+      "title": "iPad Frame",
+      "description": "A tablet drawn in CSS with even bezels, in portrait or landscape through the orientation prop.",
+      "files": [
+        {
+          "path": "packages/ui/src/ipad-frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/ipad-frame.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "iphone-frame",
+      "type": "registry:ui",
+      "title": "iPhone Frame",
+      "description": "A modern iPhone drawn in CSS: titanium rim, even bezels, Dynamic Island and side buttons, at true proportions at any width.",
+      "files": [
+        {
+          "path": "packages/ui/src/iphone-frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iphone-frame.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/separator"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/item.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/item.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "files": [
+        {
+          "path": "packages/ui/src/kbd.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/kbd.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "macbook-frame",
+      "type": "registry:ui",
+      "title": "MacBook Frame",
+      "description": "An open laptop drawn in CSS — lid, hinge and base — around a 16:10 screen for screenshots or live UI.",
+      "files": [
+        {
+          "path": "packages/ui/src/macbook-frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/macbook-frame.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "An endless horizontal or vertical strip of content with edge fade, reverse, pause on hover and a reduced-motion pause.",
+      "files": [
+        {
+          "path": "packages/ui/src/marquee.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/marquee.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(calc(-100% - var(--gap)))"
+          }
+        },
+        "@keyframes marquee-vertical": {
+          "from": {
+            "transform": "translateY(0)"
+          },
+          "to": {
+            "transform": "translateY(calc(-100% - var(--gap)))"
+          }
+        }
+      },
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/marquee.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/marquee.tsx"
+        }
+      }
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/menubar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/menubar.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "title": "Multi Select",
+      "description": "A searchable multi-select built on cmdk, with badges in the field, grouped options, a create row and a selection limit.",
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/popover"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/multi-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/multi-select.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/multiselect.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/native-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/native-select.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/navigation-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/navigation-menu.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "noise-texture",
+      "type": "registry:ui",
+      "title": "Noise Texture",
+      "description": "A static SVG film-grain overlay for flat fills and gradients.",
+      "files": [
+        {
+          "path": "packages/ui/src/noise-texture.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/noise-texture.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:ui",
+      "title": "Number Ticker",
+      "description": "Counts up to a number on a spring, with tabular digits.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/number-ticker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/number-ticker.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "orbiting-circles",
+      "type": "registry:ui",
+      "title": "Orbiting Circles",
+      "description": "Children spaced on a circle that slowly turns, staying upright.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/orbiting-circles.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/orbiting-circles.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/pagination.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pagination.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/popover.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "pricing-01",
+      "type": "registry:block",
+      "title": "Pricing 01",
+      "description": "Three pricing tiers with a monthly/yearly toggle on a sliding indicator, prices that roll digit by digit, and a highlighted middle plan.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@blank/badge",
+        "@blank/button",
+        "@blank/toggle-group"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/blocks/pricing-01.tsx",
+          "type": "registry:block",
+          "target": "components/blocks/pricing-01.tsx"
+        }
+      ],
+      "categories": [
+        "pricing",
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "height": 1120
+      }
+    },
+    {
+      "name": "pricing-card",
+      "type": "registry:ui",
+      "title": "Pricing Card",
+      "description": "A plan card with a price, a feature list and a call to action.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/pricing-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pricing-card.tsx"
+        }
+      ],
+      "categories": [
+        "marketing"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/progress.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "progressive-blur",
+      "type": "registry:ui",
+      "title": "Progressive Blur",
+      "description": "A blur that ramps up toward the edge of a scrolling container.",
+      "files": [
+        {
+          "path": "packages/ui/src/progressive-blur.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/progressive-blur.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "quantity-stepper",
+      "type": "registry:ui",
+      "title": "Quantity Stepper",
+      "description": "A number field with decrement and increment buttons, clamped to a range.",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/quantity-stepper.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/quantity-stepper.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/radio-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/radio-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "title": "Rating",
+      "description": "A star rating with radio-group semantics, optional half values and a read-only mode.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/rating.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/rating.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/rating.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/resizable.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/resizable.tsx"
+        }
+      ],
+      "categories": [
+        "layout"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "safari-frame",
+      "type": "registry:ui",
+      "title": "Safari Frame",
+      "description": "macOS Safari window chrome — traffic lights, address field with lock and host, optional tab strip — around a viewport for screenshots, video or live UI.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/safari-frame.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/safari-frame.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "scramble-text",
+      "type": "registry:ui",
+      "title": "Scramble Text",
+      "description": "Scrambles text into random characters and resolves it left to right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/scramble-text.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scramble-text.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-area.tsx"
+        }
+      ],
+      "categories": [
+        "layout"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "scroll-progress",
+      "type": "registry:ui",
+      "title": "Scroll Progress",
+      "description": "A hairline that fills as the page or a container scrolls.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/scroll-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-progress.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.tsx"
+        }
+      ],
+      "categories": [
+        "layout"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/sheet.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sheet.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "shimmer-button",
+      "type": "registry:ui",
+      "title": "Shimmer Button",
+      "description": "Blank's button with a spark of light travelling around its rim.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/shimmer-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/shimmer-button.tsx"
+        }
+      ],
+      "css": {
+        "@keyframes shimmer-slide": {
+          "to": {
+            "transform": "translate(calc(100cqw - 100%), 0)"
+          }
+        },
+        "@keyframes spin-around": {
+          "0%": {
+            "transform": "translateZ(0) rotate(0)"
+          },
+          "15%, 35%": {
+            "transform": "translateZ(0) rotate(90deg)"
+          },
+          "65%, 85%": {
+            "transform": "translateZ(0) rotate(270deg)"
+          },
+          "100%": {
+            "transform": "translateZ(0) rotate(360deg)"
+          }
+        }
+      },
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/shimmer-button.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/shimmer-button.tsx"
+        }
+      }
+    },
+    {
+      "name": "shiny-text",
+      "type": "registry:ui",
+      "title": "Shiny Text",
+      "description": "Muted text with a highlight sweeping across it.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/shiny-text.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/shiny-text.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button",
+        "@blank/input",
+        "@blank/separator",
+        "@blank/sheet",
+        "@blank/skeleton",
+        "@blank/tooltip",
+        "@blank/use-mobile"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/sidebar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sidebar.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "files": [
+        {
+          "path": "packages/ui/src/skeleton.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/skeleton.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/slider.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "snippet",
+      "type": "registry:ui",
+      "title": "Snippet",
+      "description": "An install command with package-manager tabs and a copy button.",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/snippet.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/snippet.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/shadcnblocks/kibo/blob/main/packages/snippet/index.tsx@3d63cdb15b79d972e3dc38a10997987672f9b263",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "social-button",
+      "type": "registry:ui",
+      "title": "Social Button",
+      "dependencies": [
+        "simple-icons"
+      ],
+      "registryDependencies": [
+        "@blank/button"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/social-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/social-button.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/sonner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sonner.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/spinner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/spinner.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:ui",
+      "title": "Spotlight Card",
+      "description": "A card whose border and surface light up under the cursor, colored from the brand and border tokens.",
+      "files": [
+        {
+          "path": "packages/ui/src/spotlight-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/spotlight-card.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/magicuidesign/magicui",
+          "path": "apps/www/registry/magicui/magic-card.tsx",
+          "sha": "85f97fd27b053339af74ba9dd4ca428ee25989fb",
+          "license": "MIT",
+          "url": "https://github.com/magicuidesign/magicui/blob/85f97fd27b053339af74ba9dd4ca428ee25989fb/apps/www/registry/magicui/magic-card.tsx"
+        }
+      }
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "Numbered steps for a multi-part flow, horizontal or vertical, with completed, active, loading and disabled states.",
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/stepper.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/stepper.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/stepper.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/switch.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "files": [
+        {
+          "path": "packages/ui/src/table.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/table.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tabs.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "tags-input",
+      "type": "registry:ui",
+      "title": "Tags Input",
+      "description": "A text field that turns entries into removable tags: Enter or comma adds, Backspace removes, paste splits.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/tags-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tags-input.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/tags-input.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "terminal-window",
+      "type": "registry:ui",
+      "title": "Terminal Window",
+      "description": "Terminal chrome with a title bar, prompt-led command lines, coloured output lines and an optional typing animation.",
+      "dependencies": [
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/terminal-window.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/terminal-window.tsx"
+        }
+      ],
+      "categories": [
+        "mockups"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "text-animate",
+      "type": "registry:ui",
+      "title": "Text Animate",
+      "description": "Reveals text by word, character or line with ten motion presets.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/text-animate.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/text-animate.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "files": [
+        {
+          "path": "packages/ui/src/textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:ui",
+      "title": "Tilt Card",
+      "description": "A card that tilts toward the pointer with a following glare; off on touch screens and under reduced motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@blank/use-hover-capable"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/tilt-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tilt-card.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": {
+          "repo": "https://github.com/starc007/ui-components",
+          "path": "components/motion/tilt-card.tsx",
+          "sha": "9f19813",
+          "license": "MIT",
+          "url": "https://github.com/starc007/ui-components/blob/9f19813/components/motion/tilt-card.tsx"
+        }
+      }
+    },
+    {
+      "name": "time-picker",
+      "type": "registry:ui",
+      "title": "Time Picker",
+      "description": "A segmented time field: hours, minutes, optional seconds and AM/PM, each a keyboard-steppable spin button.",
+      "files": [
+        {
+          "path": "packages/ui/src/time-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/time-picker.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/time-picker.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "A vertical or horizontal sequence of dated events with indicators, titles and content.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/timeline.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/timeline.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/timeline.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/toggle-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tooltip.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ],
+      "meta": {
+        "tier": "free"
+      }
+    },
+    {
+      "name": "tracker",
+      "type": "registry:ui",
+      "title": "Tracker",
+      "description": "An uptime strip of status blocks with tooltips and keyboard navigation.",
+      "registryDependencies": [
+        "@blank/tooltip"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/tracker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tracker.tsx"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new",
+        "source": "https://github.com/tremorlabs/tremor/blob/main/src/components/Tracker/Tracker.tsx@ca4d588f47820ff3d514d37fa4ee08a4222dec11",
+        "license": "Apache-2.0"
+      }
+    },
+    {
+      "name": "typing-animation",
+      "type": "registry:ui",
+      "title": "Typing Animation",
+      "description": "Types text out character by character, or cycles through several strings.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/typing-animation.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/typing-animation.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    },
+    {
+      "name": "word-rotate",
+      "type": "registry:ui",
+      "title": "Word Rotate",
+      "description": "Cycles through a list of words in place without moving the text around it.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/word-rotate.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/word-rotate.tsx"
+        }
+      ],
+      "categories": [
+        "animations"
+      ],
+      "meta": {
+        "tier": "free",
+        "badge": "new"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "switch",
+  "type": "registry:ui",
+  "title": "Switch",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/switch.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/switch.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

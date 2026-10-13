@@ -1,0 +1,5 @@
+node_modules
+public/r
+registry.pro.json
+.env*
+.DS_Store

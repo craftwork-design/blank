@@ -1,0 +1,25 @@
+{
+  "name": "compare-slider",
+  "type": "registry:ui",
+  "title": "Compare Slider",
+  "description": "A before/after comparison with a draggable divider, arrow-key control and a vertical option.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/compare-slider.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/compare-slider.tsx"
+    }
+  ],
+  "categories": [
+    "marketing"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/compare-slider.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

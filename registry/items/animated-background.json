@@ -1,0 +1,25 @@
+{
+  "name": "animated-background",
+  "type": "registry:ui",
+  "title": "Animated Background",
+  "description": "A highlight that slides behind the active or hovered item: tabs, menus, segmented controls.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/animated-background.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/animated-background.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/ibelick/motion-primitives/blob/main/components/core/animated-background.tsx@120f64f6ca60348e251f929e9c81f11ccbe45eda",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "navigation-menu",
+  "type": "registry:ui",
+  "title": "Navigation Menu",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/navigation-menu.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/navigation-menu.tsx"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

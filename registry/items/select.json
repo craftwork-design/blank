@@ -1,0 +1,22 @@
+{
+  "name": "select",
+  "type": "registry:ui",
+  "title": "Select",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/select.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/select.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

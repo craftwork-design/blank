@@ -1,0 +1,22 @@
+{
+  "name": "radio-group",
+  "type": "registry:ui",
+  "title": "Radio Group",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/radio-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

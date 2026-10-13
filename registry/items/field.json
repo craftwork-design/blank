@@ -1,0 +1,25 @@
+{
+  "name": "field",
+  "type": "registry:ui",
+  "title": "Field",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "label",
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/field.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/field.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

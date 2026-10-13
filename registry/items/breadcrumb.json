@@ -1,0 +1,22 @@
+{
+  "name": "breadcrumb",
+  "type": "registry:ui",
+  "title": "Breadcrumb",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/breadcrumb.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/breadcrumb.tsx"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

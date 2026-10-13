@@ -1,0 +1,22 @@
+{
+  "name": "toggle-group",
+  "type": "registry:ui",
+  "title": "Toggle Group",
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/toggle-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/toggle-group.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

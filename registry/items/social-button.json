@@ -1,0 +1,24 @@
+{
+  "name": "social-button",
+  "type": "registry:ui",
+  "title": "Social Button",
+  "dependencies": [
+    "simple-icons"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/social-button.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/social-button.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

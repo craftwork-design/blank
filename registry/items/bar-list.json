@@ -1,0 +1,22 @@
+{
+  "name": "bar-list",
+  "type": "registry:ui",
+  "title": "Bar List",
+  "description": "Ranked horizontal bars with a label and a formatted value on each row.",
+  "files": [
+    {
+      "path": "packages/ui/src/bar-list.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/bar-list.tsx"
+    }
+  ],
+  "categories": [
+    "data-display"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/tremorlabs/tremor/blob/main/src/components/BarList/BarList.tsx@ca4d588f47820ff3d514d37fa4ee08a4222dec11",
+    "license": "Apache-2.0"
+  }
+}

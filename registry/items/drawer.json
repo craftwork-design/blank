@@ -1,0 +1,25 @@
+{
+  "name": "drawer",
+  "type": "registry:ui",
+  "title": "Drawer",
+  "dependencies": [
+    "lucide-react",
+    "vaul"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/drawer.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/drawer.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

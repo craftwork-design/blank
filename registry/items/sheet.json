@@ -1,0 +1,25 @@
+{
+  "name": "sheet",
+  "type": "registry:ui",
+  "title": "Sheet",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/sheet.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sheet.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

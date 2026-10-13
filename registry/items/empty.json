@@ -1,0 +1,21 @@
+{
+  "name": "empty",
+  "type": "registry:ui",
+  "title": "Empty",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/empty.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/empty.tsx"
+    }
+  ],
+  "categories": [
+    "feedback"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "copy-button",
+  "type": "registry:ui",
+  "title": "Copy Button",
+  "description": "Copies text to the clipboard and confirms it with an icon morph, a tooltip and a live-region announcement.",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "@blank/button",
+    "@blank/tooltip"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/copy-button.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/copy-button.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": {
+      "repo": "https://github.com/educlopez/smoothui",
+      "path": "packages/smoothui/components/button-copy/index.tsx",
+      "sha": "b6312bce2b6f2ed95d8a6e98a592857884f5ea9e",
+      "license": "MIT",
+      "url": "https://github.com/educlopez/smoothui/blob/b6312bce2b6f2ed95d8a6e98a592857884f5ea9e/packages/smoothui/components/button-copy/index.tsx"
+    }
+  }
+}

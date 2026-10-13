@@ -1,0 +1,23 @@
+{
+  "name": "code-window",
+  "type": "registry:ui",
+  "title": "Code Window",
+  "description": "Editor chrome with switchable file tabs and numbered lines, with no syntax-highlighting dependency.",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/code-window.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/code-window.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

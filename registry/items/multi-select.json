@@ -1,0 +1,29 @@
+{
+  "name": "multi-select",
+  "type": "registry:ui",
+  "title": "Multi Select",
+  "description": "A searchable multi-select built on cmdk, with badges in the field, grouped options, a create row and a selection limit.",
+  "dependencies": [
+    "cmdk",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/multi-select.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/multi-select.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/cosscom/coss/blob/main/apps/origin/registry/default/ui/multiselect.tsx@0ac96b5353780c19d3122a86cac67ef0551f33ce",
+    "license": "MIT"
+  }
+}

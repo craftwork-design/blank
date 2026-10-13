@@ -1,0 +1,32 @@
+{
+  "name": "sidebar",
+  "type": "registry:ui",
+  "title": "Sidebar",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "separator",
+    "sheet",
+    "skeleton",
+    "tooltip",
+    "use-mobile"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/sidebar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sidebar.tsx"
+    }
+  ],
+  "categories": [
+    "navigation"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

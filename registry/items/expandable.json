@@ -1,0 +1,19 @@
+{
+  "name": "expandable",
+  "type": "registry:ui",
+  "title": "Expandable",
+  "description": "A surface that springs open in place to reveal more content.",
+  "dependencies": ["motion", "radix-ui"],
+  "files": [
+    {
+      "path": "packages/ui/src/expandable.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/expandable.tsx"
+    }
+  ],
+  "categories": ["data-display"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

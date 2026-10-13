@@ -1,0 +1,25 @@
+{
+  "name": "rating",
+  "type": "registry:ui",
+  "title": "Rating",
+  "description": "A star rating with radio-group semantics, optional half values and a read-only mode.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/rating.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/rating.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new",
+    "source": "https://github.com/sadmann7/diceui/blob/main/docs/registry/bases/radix/ui/rating.tsx@ea7c91f8c17689f84b928f513de4404784e89792",
+    "license": "MIT"
+  }
+}

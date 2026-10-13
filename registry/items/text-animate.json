@@ -1,0 +1,23 @@
+{
+  "name": "text-animate",
+  "type": "registry:ui",
+  "title": "Text Animate",
+  "description": "Reveals text by word, character or line with ten motion presets.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/text-animate.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/text-animate.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

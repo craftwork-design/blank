@@ -1,0 +1,23 @@
+{
+  "name": "word-rotate",
+  "type": "registry:ui",
+  "title": "Word Rotate",
+  "description": "Cycles through a list of words in place without moving the text around it.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/word-rotate.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/word-rotate.tsx"
+    }
+  ],
+  "categories": [
+    "animations"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

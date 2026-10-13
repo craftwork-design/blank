@@ -1,0 +1,19 @@
+{
+  "name": "chip",
+  "type": "registry:ui",
+  "title": "Chip",
+  "description": "A compact, selectable tag with an optional avatar and a dismiss button.",
+  "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
+  "files": [
+    {
+      "path": "packages/ui/src/chip.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/chip.tsx"
+    }
+  ],
+  "categories": ["forms"],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

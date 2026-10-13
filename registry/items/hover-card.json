@@ -1,0 +1,21 @@
+{
+  "name": "hover-card",
+  "type": "registry:ui",
+  "title": "Hover Card",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/hover-card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/hover-card.tsx"
+    }
+  ],
+  "categories": [
+    "overlays"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

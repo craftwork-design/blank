@@ -1,0 +1,21 @@
+{
+  "name": "scroll-area",
+  "type": "registry:ui",
+  "title": "Scroll Area",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/scroll-area.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/scroll-area.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

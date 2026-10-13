@@ -1,0 +1,20 @@
+{
+  "name": "android-frame",
+  "type": "registry:ui",
+  "title": "Android Frame",
+  "description": "A Pixel-style handset drawn in CSS with a punch-hole camera and right-side buttons, at true proportions at any width.",
+  "files": [
+    {
+      "path": "packages/ui/src/android-frame.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/android-frame.tsx"
+    }
+  ],
+  "categories": [
+    "mockups"
+  ],
+  "meta": {
+    "tier": "free",
+    "badge": "new"
+  }
+}

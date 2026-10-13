@@ -1,0 +1,21 @@
+{
+  "name": "slider",
+  "type": "registry:ui",
+  "title": "Slider",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "files": [
+    {
+      "path": "packages/ui/src/slider.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/slider.tsx"
+    }
+  ],
+  "categories": [
+    "forms"
+  ],
+  "meta": {
+    "tier": "free"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "features-01",
+  "type": "registry:block",
+  "title": "Features 01",
+  "description": "A two-tone section heading with a short intro, followed by a six-cell icon grid separated by hairlines. Three columns on desktop, two on tablet, one on mobile.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@blank/button"],
+  "files": [
+    {
+      "path": "packages/ui/blocks/features-01.tsx",
+      "type": "registry:block",
+      "target": "components/blocks/features-01.tsx"
+    }
+  ],
+  "categories": ["features", "marketing"],
+  "meta": {
+    "tier": "free",
+    "height": 820
+  }
+}
